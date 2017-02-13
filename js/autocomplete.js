@@ -3,7 +3,7 @@ var player_count = 0;
 
 $(function() {
     var options = {
-        url: "../players.json",
+        url: "players.json",
 
         listLocation: "Players",
         getValue: function(element) {
