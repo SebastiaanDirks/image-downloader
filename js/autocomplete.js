@@ -121,8 +121,9 @@ function downloadPlayers() {
 
     Promise.all(urls.map(function(url) {
             var link = "download.php?id=";
+            var link2 = "https://fifa17.content.easports.com/fifa/fltOnlineAssets/CC8267B6-0817-4842-BB6A-A20F88B05418/2017/fut/playerheads/html5/single/512x512/p";
             if (url == null) return;
-            return request(link + url, "p" + url + ".png")
+            return request(link2 + url + ".png", "p" + url + ".png")
         }))
         .then(function() {
             console.log(zip);
