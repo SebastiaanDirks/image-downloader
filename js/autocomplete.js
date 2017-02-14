@@ -120,6 +120,7 @@ function downloadPlayers() {
     }
 
     Promise.all(urls.map(function(url) {
+            //Old link
             var link = "https://fifarenderz.com/php/download.php?id=";
             if (url == null) return;
             return request(link + url, "p" + url + ".png")
