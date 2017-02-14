@@ -98,14 +98,14 @@ function removePlayer(card_id) {
 }
 
 function downloadPlayers() {
-    if (player_ids.length <= 0) {
-        return;
-    }
     var zip = new JSZip();
     var a = document.querySelector("a");
     var urls = $.map(player_ids, function(value, index) {
         return [value];
     });
+    if (urls.length <= 0) {
+        return;
+    }
 
     function request(url, name) {
         return new Promise(function(resolve) {
