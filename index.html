@@ -11,24 +11,25 @@
         <div class="container">
             <div class="jumbotron">
                 <div class="form-group">
-                    <div class="form-inline">
-                        <div class="form-group">
-                            <input type="text" name="" id="player-autocomplete" class="form-control" placeholder="Search player..." />
+                    <div class="form-inline row">
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <input type="text" name="" id="player-autocomplete" class="form-control" placeholder="Search player..." />
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="" id="card-amount" class="form-control" value="1" min="1" max="50" placeholder="Special card amount (including monthly rewards)..." />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" id="base-id" class="form-control" placeholder="Base ID" disabled/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" id="final-id" class="form-control" placeholder="Final ID" disabled/>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="number" name="" id="card-amount" class="form-control" value="1" min="1" max="50" placeholder="Special card amount (including monthly rewards)..." />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="" id="base-id" class="form-control" placeholder="Base ID" disabled/>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="" id="final-id" class="form-control" placeholder="Final ID" disabled/>
-                        </div>
-                        <div class="form-group">
-                            <input type="button" id="link-image" value="Open image" class="btn btn-warning"/>
-                        </div>
-                        <div class="form-group">
-                            <input type="button" id="add-player" value="Add player" class="btn btn-success"/>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <button id="add-player" class="btn btn-success btn-block"><span class="glyphicon glyphicon-ok"></span> Add player</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -38,7 +39,7 @@
                 </div>
                 
                 <div class="form-group">
-                    <input type="button" value="Download images" class="btn btn-primary" onclick="downloadPlayers();"/>
+                    <input type="button" value="Download images" class="btn btn-primary btn-lg btn-block" onclick="downloadPlayers();"/>
                 </div>
             </div>
         </div>
