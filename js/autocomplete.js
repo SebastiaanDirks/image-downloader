@@ -69,7 +69,7 @@ $(document).ready(function() {
         var baseId = $("#base-id").val();
         var name = $("#player-autocomplete").val();
         var amount = $("#card-amount").val();
-        var link = "https://fifa17.content.easports.com/fifa/fltOnlineAssets/CC8267B6-0817-4842-BB6A-A20F88B05418/2017/fut/playerheads/html5/single/512x512/p";
+        var link = "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/playerheads/html5/single/512x512/p";
         if (baseId == "" || baseId == null) {
             return;
         }
@@ -80,7 +80,7 @@ $(document).ready(function() {
     });
 
     $("#link-image").click(function() {
-        var link = "https://fifa17.content.easports.com/fifa/fltOnlineAssets/CC8267B6-0817-4842-BB6A-A20F88B05418/2017/fut/playerheads/html5/single/512x512/p";
+        var link = "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/playerheads/html5/single/512x512/p";
         var id = $("#final-id").val();
         if (id == "" || id == null) {
             return;
